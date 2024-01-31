@@ -1,0 +1,49 @@
+.home {
+    background-color: #c1f1f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.home .intro {
+    flex-grow: 1;
+    min-width: 300px;
+    width: 400px;
+    max-width: 500px;
+}
+
+.home .intro h1 {
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #21898eb6;
+    padding: 0px;
+    margin: 0px;
+}
+
+.home .intro .desc {
+    background-color: #21888E;
+    color: #c1f1f4;
+    padding: 50px 50px;
+    border-radius: 0px 25px 25px 60px;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.home .intro h2 {
+    font-size: 4rem;
+    text-align: right;
+    color: #21888E;
+    padding: 0px;
+    margin: 0px;
+}
+
+.home .logo {
+    width: 500px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}

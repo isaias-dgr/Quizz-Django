@@ -1,0 +1,59 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quizz</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'quizz/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'quizz/css/style_header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'quizz/css/style_intro.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'quizz/css/style_categories.css' %}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <img class="logo" src="{% static 'quizz/logo/logo.png' %}" alt="Quizz">
+            <h1 id="name" class="name">
+                <span class="slim">s</span>Quizz<span class="slim">rrel</span>
+            </h1>
+        </section>
+        <nav class="navbar">
+            <ul id="menu">
+                <li><span href="">About</span></li>
+                <li><span href="">Quiz</span></li>
+                <li><span href="">Contact me</span></li>
+            </ul>
+        </nav>
+        <section class="singin">
+            <a href="login">Sing in</a>
+        </section>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Isaias García</p>
+        <p> Backend Developer </p>
+        <p>Contact to me: isda.garo@gmail.com</p>
+        <p>Follow me:
+            <a href="https://www.github.com/" target="_blank">Github</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+        <p> Im not designer <a href="https://dribbble.com/shots/22682300-Quiz-Web-Platform" target="_blank">Based on</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+
+  app:
+    build: .
+    command: make run
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+      - "5678:5678"
+    depends_on:
+      - db
+    environment:
+      - "DATABASE_HOST=db"
+      - "DATABASE_PORT=3306"
+      - "DATABASE_NAME=quiiz"
+      - "DATABASE_USER=root"
+      - "DATABASE_PASSWORD=toor"
+
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: quiiz
+      MYSQL_USER: root
+      MYSQL_PASSWORD: toor
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  dbdata:

@@ -1,0 +1,101 @@
+header {
+    width: 70%;
+    background-color: #c1f1f4;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    height: fit-content;
+}
+
+header .title {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+
+header .title img {
+    width: 10%;
+    transform: scaleX(-1);
+}
+
+header .title .name {
+    color: #21888E;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+header .title .name .slim {
+    color: #1fabb3a8;
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+header nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    flex-grow: 1;
+    color: #21888E;
+    font-size: 1em;
+    font-weight: thinner;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li:hover {
+    color: #21888E;
+    background-color: #21898e13;
+}
+
+header .singin {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+header .singin a {
+    width: 50%;
+    color: #21888E;
+    font-weight: lighter;
+    padding: 10px 30px;
+
+    border-color: #21888E;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header .singin a:hover {
+    color: #c1f1f4;
+    background-color: #21888E;
+    text-decoration: none;
+}

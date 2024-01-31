@@ -1,0 +1,27 @@
+/* style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #c1f1f46d;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    width: 70%;
+    background-color: #c1f1f4;
+}
+
+footer {
+    width: 70%;
+    padding-top: 50px;
+    background-color: #c1f1f4;
+    color: #21888E;
+    font-size: small;
+    text-justify: center;
+    text-align: center;
+}
